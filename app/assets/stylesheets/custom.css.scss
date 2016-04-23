@@ -1,10 +1,91 @@
-.body {
-  padding-bottom: 70px;
-}
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
-.jumbotron{
-  top:50px;
+
+/*.jumbotron {
+  background-size: cover;
+  background-color: #990000;
+  background-image: url();
+  top: 50px;
+  width: 100%;
+  height: 450px;
+  z-index: 10;
+  h2 {
+    margin: 2px;
+    font-style: bold;
+    color: black;
+    left: 10px;
+  }
+  p {
+    color: black;
+    font-style: bold;
+    font-size: 8px;
+    left: 10px;
+  }
+}*/
+
+.footer {
+  text-align: center;
   width: 100%;
   height: 300px;
-  z-index: 10;
+  position: absolute;
+  background-color: #990000 !important;
+  color: white;
+  padding-top: 50px;
+
+  .last {
+    padding-top: 40px;
+  }
 }
+
+.navbar-custom {
+  height: 170px;
+  width: 100%;
+  background-color: #990000 !important;
+
+  .navbar-header > a {
+    padding-top: 70px;
+    padding-left: 130px;
+    color: white;
+    font-style: bold !important;
+    font-size: 40px;
+    /*font-family:’Source Sans Pro’;
+    font-style:normal;
+    font-weight:900;
+    src:local(‘Source Sans Pro Black’), local(‘SourceSansPro-Black’), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v4/toadOcfmlt9b38dHJxOBGA589pgrPwd9yeXZfWcyCTM.woff) format(‘woff’);*/
+  }
+
+  .navbar-nav {
+    padding-right: 100px;
+  }
+
+  .navbar-nav > li > a {
+    color: white !important;
+    font-style:normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 70px;
+    font-style: bold;
+    padding-right: 30px;
+    padding-left: 50px;
+  }
+
+}
+
+
+/*.navbar-custom {
+    background-color:#229922;
+    color:#ffffff;
+    border-radius:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color:transparent;
+}
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+}*/

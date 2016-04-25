@@ -2,23 +2,24 @@
 
   <nav class="navbar navbar-default navbar-custom">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
+    <!-- <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/"><strong>Vonox Oil</strong></a>
-    </div>
+      <a class="navbar-brand" href="/"><strong></strong></a>
+    </div> -->
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav pull-right">
         <li><a href="/">主頁</a></li>
         <li><%= link_to "公司概述", pages_about_path %></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">產品 <span class="caret"></span></a>
+
+        <!-- <li class="dropdown btn-group">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="btn btn-secondary btn-lg btn-danger dropdown-toggle" data-toggle="dropdown">產品 <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">工業用油</a></li>
             <li><a href="#">車輛用油</a></li>
@@ -28,7 +29,21 @@
             <li><a href="#">預留一</a></li>
             <li><a href="#">預留二</a></li>
           </ul>
+        </li> -->
+
+        <li class="dropdown">
+          <a onclick="myFunction()" class="dropbtn">產品<span class="caret"></span></a>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="#">工業用油</a>
+            <a href="#">車輛用油</a>
+            <a href="#">金屬加工切削加工液</a>
+            <a href="#">潤滑脂</a>
+            <a href="#">防銹劑</a>
+            <a href="#">預留一</a>
+            <a href="#">預留二</a>
+          </div>
         </li>
+
         <li><a href="#">最新動態</a></li>
         <li><%= link_to "聯絡我們", pages_contact_path %></li>
       </ul>
@@ -48,3 +63,31 @@
     </div><!-- /.navbar-collapse -->
   </nav>
 </div>
+
+
+<script>
+
+//   $('.dropdown-toggle').dropdown()
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+

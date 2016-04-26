@@ -37,30 +37,14 @@
   background-color: #990000 !important;
   float: none;
   margin-bottom: -100px;
-<<<<<<< HEAD
   height: 40px;
-=======
-  height:40px;
 
-  .navbar-social{
+  .navbar-social {
     padding-top: -40px;
   }
 
-  .navbar-social > li > a{
+  .navbar-social > li > a {
     top:-5px;
-  }
->>>>>>> 026096ca79d4aebc94ea6f1cab48e29e0106e973
-
-  .navbar-header > a {
-    padding-bottom: 30px;
-    padding-left: 10px;
-    color: white;
-    font-style: bold !important;
-    font-size: 60px;
-    /*font-family:’Source Sans Pro’;
-    font-style:normal;
-    font-weight:900;
-    src:local(‘Source Sans Pro Black’), local(‘SourceSansPro-Black’), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v4/toadOcfmlt9b38dHJxOBGA589pgrPwd9yeXZfWcyCTM.woff) format(‘woff’);*/
   }
 
   .navbar-nav {
@@ -80,26 +64,33 @@
 }
 
 .navbar-custom2 {
-<<<<<<< HEAD
   background-color: white !important;
   border-color: white !important;
   padding: 15px 0;
+  position: fixed;
 
-=======
-  background-color:white !important;
-  border-color: white !important;
-  padding: 15px 0;
->>>>>>> 026096ca79d4aebc94ea6f1cab48e29e0106e973
+  .navbar-header > a {
+    padding-left: 60px;
+  }
+
   .navbar-nav > li > a {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     padding-top: 15px;
-    font-style: bold;
+    font-weight: 700;
     padding-right: 30px;
     padding-left: 30px;
+    color: black !important;
+    border-bottom: 3px solid transparent !important;
   }
-  .navbar-text{
+
+  .navbar-nav > li > a:hover {
+    color: #990000 !important;
+    border-bottom: 3px solid #990000 !important;
+  }
+
+  .navbar-text {
     padding-right:85px;
   }
 }
@@ -110,7 +101,7 @@
 }
 
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #ffb3b3;
+  background-color: #990000;
 }
 
 .dropdown {
@@ -135,7 +126,10 @@
   display: block;
 }
 
-.dropdown a:hover {background-color: #ffb3b3}
+.dropdown a:hover {
+  background-color: #990000;
+  color: white !important;
+}
 
 .item > img {
   width: 100%;
@@ -144,4 +138,15 @@
 
 .page-header {
   padding: 0 20px;
+  text-align: justify;
+}
+
+.thumbnail {
+  .caption {
+    background-color: #f2f2f2;
+  }
+
+  .caption:hover {
+    background-color: white;
+  }
 }

@@ -9,6 +9,14 @@
   color: white;
   padding-top: 35px;
   padding-bottom: 40px;
+
+  .about1 > a {
+    color: white !important;
+  }
+
+  .about2 > a {
+    color: white !important;
+  }
 }
 
 .footer2 {
@@ -27,6 +35,7 @@
   background-color: #990000 !important;
   float: none;
   margin-bottom: -100px;
+  height: 40px;
 
   .navbar-header > a {
     padding-top: 70px;
@@ -45,6 +54,7 @@
   }
 
   .navbar-nav > li > a {
+    overflow: hidden;
     color: white !important;
     font-style: normal;
     font-weight: 400;
@@ -56,16 +66,15 @@
 }
 
 .navbar-custom2 {
-  padding: 0 500px;
-  top:-20px;
-  background-color:white !important;
+  background-color: white !important;
   border-color: white !important;
-  padding: 50px 0;
+  padding: 15px 0;
+
   .navbar-nav > li > a {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    padding-top: 20px;
+    padding-top: 15px;
     font-style: bold;
     padding-right: 30px;
     padding-left: 30px;
@@ -108,4 +117,8 @@
 .item > img {
   width: 100%;
   height: auto;
+}
+
+.page-header {
+  padding: 0 20px;
 }

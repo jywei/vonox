@@ -1,5 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 
 .footer1 {
@@ -35,14 +37,26 @@
   background-color: #990000 !important;
   float: none;
   margin-bottom: -100px;
+<<<<<<< HEAD
   height: 40px;
+=======
+  height:40px;
+
+  .navbar-social{
+    padding-top: -40px;
+  }
+
+  .navbar-social > li > a{
+    top:-5px;
+  }
+>>>>>>> 026096ca79d4aebc94ea6f1cab48e29e0106e973
 
   .navbar-header > a {
-    padding-top: 70px;
+    padding-bottom: 30px;
     padding-left: 10px;
     color: white;
     font-style: bold !important;
-    font-size: 40px;
+    font-size: 60px;
     /*font-family:’Source Sans Pro’;
     font-style:normal;
     font-weight:900;
@@ -66,10 +80,16 @@
 }
 
 .navbar-custom2 {
+<<<<<<< HEAD
   background-color: white !important;
   border-color: white !important;
   padding: 15px 0;
 
+=======
+  background-color:white !important;
+  border-color: white !important;
+  padding: 15px 0;
+>>>>>>> 026096ca79d4aebc94ea6f1cab48e29e0106e973
   .navbar-nav > li > a {
     font-style: normal;
     font-weight: 400;
@@ -78,6 +98,9 @@
     font-style: bold;
     padding-right: 30px;
     padding-left: 30px;
+  }
+  .navbar-text{
+    padding-right:85px;
   }
 }
 

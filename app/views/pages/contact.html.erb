@@ -1,2 +1,86 @@
-<h1>Pages#contact</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
+
+<div class="container-fluid">
+  <div class="row">
+    <div style="display:block;text-align: center">
+      <%= image_tag ("Banner K - Contact Us short.jpg"),style:"width:952;height:auto;left:0;" %>
+    </div>
+
+    <br>
+
+  </div>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <%= render "common/left" %>
+
+      <div class="col-md-9" style="letter-spacing: 1px;padding: 0px;">
+
+        <div class="col-md-12">
+
+          <div class="aboutline"></div>
+          <h3>
+            <strong>CONTACT US</strong>
+          </h3>
+
+        </div>
+
+        <div class="col-md-7">
+
+          <br>
+
+          <div style='width: 400px;'>
+            <div id="map" style='width: 400px; height: 250px;'></div>
+          </div>
+
+        </div>
+
+        <div class="col-md-5">
+
+          <h4><strong>
+            CHUANN PO ENTERPRISE CO., LTD
+          </strong></h4>
+          <h4><strong>
+            全柏企業有限公司
+          </strong></h4>
+
+          <br>
+
+          <p>台中市烏日區溪南路一段745巷27號</p>
+          <p>No.27, Ln. 745, Sec. 1, Xinan Rd., Wuri Dist., Taichung City 414, Taiwan (R.O.C.)</p>
+
+          <br>
+
+          <p>TEL: 886-4-2335-5269</p>
+          <p>FAX: 886-4-2335-5166</p>
+          <p>Email: cpecvonox@yahoo.com.tw</p>
+
+        </div>
+
+
+        <br>
+        <br>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script language="javascript" type="text/javascript">
+function initMap() {
+  var myLatLng = {lat: 24.0711618, lng: 120.6443106};
+
+  // Create a map object and specify the DOM element for display.
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: myLatLng,
+    scrollwheel: false,
+    zoom: 14
+  });
+
+  // Create a marker and set its position.
+  var marker = new google.maps.Marker({
+    map: map,
+    position: myLatLng,
+    title: 'Hello World!'
+  });
+}
+</script>
+

@@ -44,7 +44,8 @@
   }
 
   .navbar-social > li > a {
-    top:-5px;
+    top: -5px;
+    font-size: 13px !important;
   }
 
   .navbar-nav {
@@ -175,4 +176,15 @@
 
 .nav-btn > li > a {
   margin-bottom: 10px;
+  font-weight: 700;
+  background-color: #e6e6e6;
+  font-size: 14px;
+  border-radius: 15px !important;
+  border-color: transparent;
+}
+
+.nav-btn > li > a:hover {
+  background-color: #8c8c8c !important;
+  color: white !important;
+  border-color: transparent;
 }

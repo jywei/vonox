@@ -54,27 +54,26 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav pull-right navbar-text">
-        <li><%= link_to "HOME", root_path %></li>
-        <li><%= link_to "COMPANY", pages_about_path %></li>
-
+        <li><div class="underscore"><%= link_to "HOME", root_path %></div></li>
+        <li><div class="underscore"><%= link_to "COMPANY", pages_about_path %></div></li>
         <li class="dropdown">
-          <a onclick="myFunction()" class="dropbtn">PRODUCT<span class="caret"></span></a>
-          <div class="dropdown-content" id="myDropdown">
-            <a href="#">工業用油</a>
-            <a href="#">車輛用油</a>
-            <a href="#">金屬加工切削加工液</a>
-            <a href="#">潤滑脂</a>
-            <a href="#">防銹劑</a>
-            <a href="#">預留一</a>
-            <a href="#">預留二</a>
-            <a href="#">預留三</a>
+          <div class="dropdown-underscore">
+            <a onclick="myFunction()" class="dropbtn">PRODUCT<span class="caret"></span></a>
+            <div class="dropdown-content" id="myDropdown">
+              <%= link_to "工業用油", products_example_path %>
+              <%= link_to "車輛用油", products_example_path %>
+              <%= link_to "金屬加工切削加工液", products_example_path %>
+              <%= link_to "潤滑脂", products_example_path %>
+              <%= link_to "防銹劑", products_example_path %>
+              <%= link_to "預留一", products_example_path %>
+              <%= link_to "預留二", products_example_path %>
+              <%= link_to "預留三", products_example_path %>
+            </div>
           </div>
         </li>
-
-        <li><a href="#">NEWS</a></li>
-        <li><%= link_to "CONTACT US", pages_contact_path %></li>
+        <li><div class="underscore"><%= link_to "NEWS", news_example_path %></div></li>
+        <li><div class="underscore"><%= link_to "CONTACT US", pages_contact_path %></div></li>
       </ul>
-
     </div>
   </nav>
 </div>

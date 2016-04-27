@@ -5,6 +5,12 @@ Rails.application.routes.draw do
 
   get 'pages/contact'
 
+  get 'products/example'
+
+  get 'subproducts/example'
+
+  get 'news/example'
+
   root 'pages#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

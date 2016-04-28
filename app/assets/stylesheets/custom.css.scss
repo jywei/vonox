@@ -94,14 +94,14 @@
 
   .navbar-nav > li > div:after, .dropdown-underscore:after {
     text-align: center;
-    display:block;
-    position:absolute;
-    background:transparent;
-    top:140%;
-    left:25%;
-    width:50%;
-    height:3px;
-    content:" ";
+    display: block;
+    position: absolute;
+    background: transparent;
+    top: 140%;
+    left: 25%;
+    width: 50%;
+    height: 3px;
+    content: " ";
   }
 
   .dropdown-underscore:after {
@@ -161,7 +161,7 @@
   color: white !important;
 }
 
-.dropdown-underscore a:hover{
+.dropdown-underscore a:hover {
   background-color: white;
   color: #990000;
 }
@@ -177,7 +177,7 @@
 }
 
 .thumbnail {
-  margin:20px 0;
+  margin: 20px 0;
   .caption {
     background-color: #f2f2f2;
   }
@@ -187,7 +187,7 @@
   }
 }
 
-.caption_box{
+.caption_box {
   position: relative;
   height: 140px;
 
@@ -209,7 +209,7 @@
   }
 
   @media(max-width:992px){
-    height:130px;
+    height: 130px;
   }
 }
 

@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   get 'news/example'
 
+  get 'news/content'
+
   root 'pages#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

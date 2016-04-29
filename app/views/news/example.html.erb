@@ -4,36 +4,8 @@
   </div>
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <div class="col-md-3">
-        <br>
-        <div class="row">
-          <div class="col-md-11">
-            <ul class="nav nav-pills nav-stacked nav-btn" style="max-width: 300px;">
-              <li> <%= link_to("工業用油", products_example_path,
-                        class: "btn btn-sm btn-default btn-current") %> </li>
-              <li> <%= link_to("車輛用油", products_example_path,
-                        class: "btn btn-sm btn-default") %> </li>
-              <li> <%= link_to("金屬加工切削加工液", products_example_path,
-                        class: "btn btn-sm btn-default") %> </li>
-              <li> <%= link_to("潤滑脂", products_example_path,
-                        class: "btn btn-sm btn-default") %> </li>
-              <li> <%= link_to("防銹劑", products_example_path,
-                        class: "btn btn-sm btn-default") %> </li>
-              <li> <%= link_to("預留一", products_example_path,
-                        class: "btn btn-sm btn-default") %> </li>
-              <li> <%= link_to("預留二", products_example_path,
-                        class: "btn btn-sm btn-default") %> </li>
-              <li> <%= link_to("預留三", products_example_path,
-                        class: "btn btn-sm btn-default") %> </li>
-            </ul>
-          </div>
-          <div class="col-md-1">
-          </div>
-        </div>
 
-        <br>
-
-      </div>
+      <%= render 'common/left' %>
 
       <div class="col-md-9" style="letter-spacing: 1px;">
 
@@ -60,7 +32,7 @@
                   <p>In the second of a three-part series on capability development, April Chong speaks to an SME and an industry expert from the SME Capabilities Series of events about their views on growing new markets. </p>
 
                   <p>
-                    <%= link_to "View Detail", "#" %>
+                    <%= link_to "View Detail", news_content_path %>
                   </p>
                 </div>
               </div>
@@ -84,7 +56,7 @@
                   <p>Range of United Products now available in 300 workshops.</p>
 
                   <p>
-                    <%= link_to "View Detail", "#" %>
+                    <%= link_to "View Detail", news_content_path %>
                   </p>
                 </div>
               </div>
@@ -108,7 +80,7 @@
                   <p>MAN Diesel & Turbo (MDT) tested basic additive package of cylinder oil, CNOOC Unimar 570, 70 BN, SAE 50. The test found Unimar 570 acceptable. </p>
 
                   <p>
-                    <%= link_to "View Detail", "#" %>
+                    <%= link_to "View Detail", news_content_path %>
                   </p>
                 </div>
               </div>

@@ -27,6 +27,8 @@
       <%= render "common/navbar" %>
     </div>
 
+    <%= breadcrumbs pretext: "You are here: ", display_single_fragment: true, style: :bootstrap, separator: '' %>
+
     <div id="content">
       <%= yield %>
     </div>
